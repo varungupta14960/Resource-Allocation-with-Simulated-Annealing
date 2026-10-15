@@ -1,0 +1,71 @@
+{
+  "id": "small",
+  "role": "Exact validation",
+  "description": "5 projects, 2 resources (budget, manpower). Small enough for exhaustive enumeration, so the true optimum and SA's optimality gap can be computed.",
+  "problem": {
+    "name": "University project portfolio - small (n=5)",
+    "projects": [
+      {
+        "name": "Smart Campus IoT",
+        "L": 2,
+        "U": 10,
+        "v": 100,
+        "k": 0.3
+      },
+      {
+        "name": "Student Analytics Portal",
+        "L": 2,
+        "U": 9,
+        "v": 80,
+        "k": 0.4
+      },
+      {
+        "name": "Library Digitisation",
+        "L": 1,
+        "U": 9,
+        "v": 55,
+        "k": 0.5
+      },
+      {
+        "name": "Green Energy Audit",
+        "L": 2,
+        "U": 10,
+        "v": 70,
+        "k": 0.25
+      },
+      {
+        "name": "Mobile Learning App",
+        "L": 2,
+        "U": 10,
+        "v": 90,
+        "k": 0.35
+      }
+    ],
+    "resources": [
+      {
+        "name": "Budget (₹ lakh)",
+        "capacity": 110
+      },
+      {
+        "name": "Manpower (person-days)",
+        "capacity": 170
+      }
+    ],
+    "consumption": [
+      [
+        6,
+        4,
+        3,
+        8,
+        5
+      ],
+      [
+        8,
+        10,
+        6,
+        4,
+        9
+      ]
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "toy",
+  "role": "Worked example",
+  "description": "The 4-project toy example from the Review-1 report (section 3.3). Use it to check the hand-calculation x=(3,0,4,2) -> U=83.49.",
+  "problem": {
+    "name": "Review-1 toy example",
+    "projects": [
+      {
+        "name": "A",
+        "L": 2,
+        "U": 6,
+        "v": 40,
+        "k": 0.5
+      },
+      {
+        "name": "B",
+        "L": 2,
+        "U": 6,
+        "v": 30,
+        "k": 0.4
+      },
+      {
+        "name": "C",
+        "L": 3,
+        "U": 8,
+        "v": 50,
+        "k": 0.3
+      },
+      {
+        "name": "D",
+        "L": 1,
+        "U": 5,
+        "v": 25,
+        "k": 0.6
+      }
+    ],
+    "resources": [
+      {
+        "name": "Budget (₹ lakh)",
+        "capacity": 100
+      },
+      {
+        "name": "Manpower (person-days)",
+        "capacity": 120
+      }
+    ],
+    "consumption": [
+      [
+        10,
+        8,
+        12,
+        6
+      ],
+      [
+        12,
+        10,
+        8,
+        15
+      ]
+    ]
+  }
+}

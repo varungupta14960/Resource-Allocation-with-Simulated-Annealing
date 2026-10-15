@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-950: #072a1a;
+  --color-forest-900: #0d3b26;
+  --color-forest-800: #14502f;
+  --color-forest-700: #1b6b49;
+  --color-forest-600: #2a8160;
+  --color-mint-50: #f4faf6;
+  --color-mint-100: #e6f6ed;
+  --color-mint-200: #c3efdc;
+  --color-mint-300: #9fdcc0;
+  --color-gold-300: #ffe566;
+  --color-gold-400: #ffd60a;
+  --color-gold-500: #e6bd00;
+  --color-ink: #12261b;
+  --color-ink-soft: #4b6156;
+  --color-rule: #d3e5da;
+  --color-danger: #b3261e;
+  --font-sans: "Segoe UI", "Helvetica Neue", Inter, system-ui, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "SF Mono", Consolas, monospace;
+}
+
+:root { color-scheme: light; }
+html, body { background: var(--color-mint-50); color: var(--color-ink); font-family: var(--font-sans); }
+body { font-size: 15px; line-height: 1.5; }
+h1, h2, h3 { font-family: var(--font-serif); color: var(--color-forest-900); letter-spacing: -0.005em; }
+:focus-visible { outline: 2px solid var(--color-forest-700); outline-offset: 2px; }
+
+@layer components {
+  .panel { background: #fff; border: 1px solid var(--color-rule); border-radius: 4px; }
+  .panel-head { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; padding: .9rem 1.1rem; border-bottom: 1px solid var(--color-rule); }
+  .panel-body { padding: 1.1rem; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; font-weight:600; font-size:.875rem; padding:.5rem .95rem; border-radius:3px; border:1px solid transparent; cursor:pointer; transition: background .12s, border-color .12s; }
+  .btn:disabled { opacity:.45; cursor:not-allowed; }
+  .btn-primary { background: var(--color-forest-800); color:#fff; }
+  .btn-primary:hover:not(:disabled) { background: var(--color-forest-900); }
+  .btn-gold { background: var(--color-gold-400); color: var(--color-forest-950); }
+  .btn-gold:hover:not(:disabled) { background: var(--color-gold-500); }
+  .btn-ghost { background:#fff; color: var(--color-forest-800); border-color: var(--color-forest-700); }
+  .btn-ghost:hover:not(:disabled) { background: var(--color-mint-100); }
+  .btn-danger { background:#fff; color: var(--color-danger); border-color: var(--color-danger); }
+  .input { width:100%; border:1px solid #b9d3c4; border-radius:3px; padding:.35rem .5rem; background:#fff; font-size:.875rem; font-variant-numeric: tabular-nums; }
+  .input:focus { border-color: var(--color-forest-700); }
+  .input.invalid { border-color: var(--color-danger); background:#fff6f5; }
+  .label { font-size:.78rem; font-weight:600; color: var(--color-ink-soft); }
+  .tbl { width:100%; border-collapse: collapse; font-size:.85rem; font-variant-numeric: tabular-nums; }
+  .tbl th { text-align:left; font-weight:600; background: var(--color-forest-900); color:#fff; padding:.5rem .65rem; white-space:nowrap; }
+  .tbl td { padding:.42rem .65rem; border-bottom:1px solid var(--color-rule); }
+  .tbl tbody tr:nth-child(even) { background: var(--color-mint-50); }
+  .tbl td.num, .tbl th.num { text-align:right; }
+  .tbl tr.best td { background: #fff8d1; font-weight:600; }
+  .tbl tr.total td { background: var(--color-mint-100); font-weight:600; }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700; padding:.12rem .45rem; border-radius:2px; }
+  .badge-gold { background: var(--color-gold-400); color: var(--color-forest-950); }
+  .badge-green { background: var(--color-mint-200); color: var(--color-forest-900); }
+  .badge-red { background:#fde4e1; color: var(--color-danger); }
+  .badge-grey { background:#e8eeea; color: var(--color-ink-soft); }
+  .prose-sm p { margin: 0 0 .6rem; }
+  .formula { font-family: var(--font-serif); font-style: italic; background: var(--color-mint-50); border-left: 3px solid var(--color-gold-400); padding:.5rem .8rem; overflow-x:auto; }
+}
+
+@media print {
+  aside, .no-print, header.topbar { display:none !important; }
+  main { padding: 0 !important; }
+  body { background:#fff; }
+  .panel { break-inside: avoid; }
+}

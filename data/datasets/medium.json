@@ -1,0 +1,152 @@
+{
+  "id": "medium",
+  "role": "SA demonstration",
+  "description": "12 university projects, 3 resources (budget, manpower, equipment). Both budget and manpower bind; exhaustive search is infeasible, so SA is compared with the baselines only.",
+  "problem": {
+    "name": "University project portfolio - medium (n=12)",
+    "projects": [
+      {
+        "name": "ERP Upgrade",
+        "L": 3,
+        "U": 12,
+        "v": 140,
+        "k": 0.22
+      },
+      {
+        "name": "Cloud Migration",
+        "L": 2,
+        "U": 10,
+        "v": 120,
+        "k": 0.3
+      },
+      {
+        "name": "Cybersecurity Hardening",
+        "L": 2,
+        "U": 8,
+        "v": 95,
+        "k": 0.4
+      },
+      {
+        "name": "Data Warehouse",
+        "L": 3,
+        "U": 12,
+        "v": 130,
+        "k": 0.25
+      },
+      {
+        "name": "AI Support Chatbot",
+        "L": 2,
+        "U": 9,
+        "v": 85,
+        "k": 0.35
+      },
+      {
+        "name": "Smart Lab Equipment",
+        "L": 2,
+        "U": 8,
+        "v": 75,
+        "k": 0.33
+      },
+      {
+        "name": "Campus Wi-Fi Expansion",
+        "L": 3,
+        "U": 10,
+        "v": 90,
+        "k": 0.28
+      },
+      {
+        "name": "E-Learning Content Studio",
+        "L": 2,
+        "U": 10,
+        "v": 70,
+        "k": 0.38
+      },
+      {
+        "name": "Alumni Portal",
+        "L": 1,
+        "U": 6,
+        "v": 45,
+        "k": 0.5
+      },
+      {
+        "name": "Solar Microgrid",
+        "L": 3,
+        "U": 10,
+        "v": 110,
+        "k": 0.2
+      },
+      {
+        "name": "Robotics Studio",
+        "L": 2,
+        "U": 8,
+        "v": 80,
+        "k": 0.32
+      },
+      {
+        "name": "Research Analytics Suite",
+        "L": 2,
+        "U": 9,
+        "v": 100,
+        "k": 0.3
+      }
+    ],
+    "resources": [
+      {
+        "name": "Budget (₹ lakh)",
+        "capacity": 300
+      },
+      {
+        "name": "Manpower (person-days)",
+        "capacity": 200
+      },
+      {
+        "name": "Equipment hours",
+        "capacity": 150
+      }
+    ],
+    "consumption": [
+      [
+        7,
+        6,
+        4,
+        6,
+        3,
+        8,
+        7,
+        2,
+        2,
+        9,
+        5,
+        4
+      ],
+      [
+        5,
+        4,
+        3,
+        6,
+        4,
+        2,
+        3,
+        5,
+        3,
+        3,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        1,
+        3,
+        4,
+        6,
+        2,
+        1,
+        1,
+        5,
+        6,
+        4
+      ]
+    ]
+  }
+}
